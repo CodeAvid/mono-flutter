@@ -71,7 +71,6 @@ class MonoWebViewState extends State<MonoWebView> {
     contentBase64 = base64Encode(const Utf8Encoder().convert(
         MonoHtml.buildPaymentView(
             widget.apiKey,
-            widget.paymentUrl,
             widget.reference ?? 15.getRandomString,
             widget.config,
             widget.reAuthCode)));
